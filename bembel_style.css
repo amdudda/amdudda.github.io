@@ -1,0 +1,62 @@
+/* I started with crimson and picked colors that will work with that.  Don't judge me.  But creamsicles sure are tasty!  */
+body {
+    background: #FEFEFE;
+    background: url("images/crystal4.jpg");  /* image is a photo I took and modified for this site */
+    background-attachment: fixed;  /* http://www.w3schools.com/cssref/pr_background-attachment.asp */
+}
+
+.jumbotron {
+    /*color: #00072B;*/
+    background: #BDC5C8 ;
+}
+
+.jumbotron div {
+    color: #00072B;
+    /*background: #BDC5C8 ;*/
+}
+
+.col-sm-12 {
+    color: #BDC5C8  ;
+    background: #00072B;
+}
+
+.col-sm-4 {
+    border: 1px solid #00072B;  /* this gets overridden for classes inside the jumbotron. */
+    /*border: 1px solid #00072B;*/
+    color: #00072B;
+    background: #BDC5C8;
+}
+
+select,button {
+    color: #00072B;
+}
+
+a {
+    /* includes a:link */
+    color: #00362C;
+}
+
+a:hover, a:visited {
+    color: #FEFEFE;
+}
+
+a:active {
+     color: #00362C;
+}
+
+/* styles to deal with readme popups */
+#readme_info {
+    border: 1px solid #00072B;;
+    background: #BDC5C8;
+    padding: 10px;
+}
+
+.lisezmoi {
+    color: #00362c;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+pre {
+    background: #FEFEFE;
+}

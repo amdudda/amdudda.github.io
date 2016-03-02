@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A.M. Dudda's Portfolio</title>
+    <!-- JavaScript code to fetch and format data -->
+    <script src="dataprocessor.js" type="text/javascript"></script>
+    <script src="ajaxRequest.js" type="text/javascript"></script>
+    <!-- Link to bootstrap layout info -->
+    <!-- Set page width equal to browser window width -->
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <!-- download bootstrap file -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <!-- CSS customizations -->
+    <link rel="stylesheet" href="portfolio_style.css" type="text/css" />
+    <link rel="stylesheet" href="bembel_style.css" type="text/css" />
+</head>
+<body>
+<div class="container-fluid">  <!-- start bootstrap container -->
+    <div class="jumbotron">
+        <div class="row">
+            <!-- Banner at top of page with key info -->
+            <div id="lede" class="col-sm-8">
+                <h1>Coding Portfolio </h1>
+            </div>
+            <div id="logo" class="col-sm-8 col-md-4">
+                <!-- Pseudo logo - just a fun thing to practice drawing stuff -->
+                <div id="spiroCanvas">
+                    <p id="inset"><span class="glyphicon glyphicon-folder-open"></span></p>
+                    <canvas id="spiro" height="200px" width="200px">If your browser does not support canvas elements, you
+                        will see this text instead of a spirograph being drawn via some JavaScript code.
+                    </canvas>
+                </div>
+            </div>
+            <div id="headertext" class="col-sm-8">
+            <!-- TODO: get this to flow under the "lede" element in wide layout instead of aligning to the bottom of "logo".
+            what I want is for it to stack in small display (which it does), but for it to resemble this table when on
+            a larger display:
+            -----------
+            | A    |   |
+            -------| B |
+            | C    |   |
+            -----------
+
+            The link below gives some help, though my experimental results have been... entertainingly wrong...
+            http://getbootstrap.com/css/#grid-responsive-resets
+
+            Still not getting a good layout.  Documentation seems to imply that push and pull do what I want, but no dice.
+            Instead of rearranging element order, it pushes elements off the screen.
+            -->
+            <p>For <a href="mailto:tk0654wm@minneapolis.edu?subject=Your%20online%20portfolio">A. M. Dudda</a>, Software Development student<br/>
+                AAS Degree program at <a href="http://minneapolis.edu">Minneapolis Community & Technical College</a>.
+            </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="summary">
+        <div class="row">
+            <div class="col-sm-12" id="details">
+                <p>This is a portfolio of assignments and projects undertaken by A.M. Dudda in pursuit of an AAS in
+                    Software Development at Minneapolis Community & Technical College. Expected graduation is December
+                    of 2016.</p>
+                <p>This page was laid out using Bootstrap version 3.3.5. I have marked starred projects with a pushpin
+                    glyph. Mostly, these are larger projects or things I feel show off particular skills.  Note that
+                    links to repositories will open in a new tab.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <!-- This is where the repository information goes -->
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12" id="footer">
+            &copy;2016 by A.M. Dudda
+        </div>
+    </div>
+</div>  <!-- end bootstrap container -->
+
+<div id="readme_info" onclick="hideReadme()">
+    <!--this is supposed to be invisible-->
+</div>
+
+<script src="spirograph.js"></script>
+
+</body>
+</html>

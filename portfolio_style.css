@@ -1,0 +1,82 @@
+/* This specifies layout settings independent of color*/
+.jumbotron {
+    text-align: center;
+}
+
+.col-sm-12 {
+    border-radius: 5px;
+}
+
+#summary{
+    margin-bottom: 10px;
+}
+
+#footer {
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.col-sm-4 {
+    border-radius: 5px;
+    min-height: 100px;  /* this just evens out the cell size so only a really long description will expand the cell */
+}
+
+select, button {
+    margin: 0 5px;
+}
+
+.glyphicon-pushpin {
+    font-size:200%;
+}
+
+a {
+    /* includes a:link */
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* styling for spirograph pseudologo*/
+.jumbotron div{
+    border:none;
+    background: none;
+}
+
+#logo {
+    position: relative;
+    height: 200px;  /* the height of the canvas element it's holding */
+}
+
+#spiroCanvas {
+    position: relative;
+    width: 201px;
+    margin: 0 auto;
+}
+
+#spiro {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#inset {
+    font-size: 300%;
+    position: absolute;
+    top: 75px;
+    left: 80px;
+}
+
+/* styles to deal with readme popups */
+#readme_info {
+    /* http://www.w3schools.com/cssref/pr_class_visibility.asp */
+    visibility: hidden;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    border-radius: 5px;
+    text-wrap: normal;
+    overflow: auto;
+}
